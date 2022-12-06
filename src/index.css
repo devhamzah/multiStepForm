@@ -5,5 +5,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+input{
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 8px;
+  
+  border: 1px solid #a0a0a0;
+  margin: 5px;
+}
+input:focus{
+  outline: none;
+}
+.header{
+  text-align: center;
+  color :#4285F4;
+}
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0px;
+}
+button{
+  padding: 8px 22px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  cursor: pointer;
+}
+button:disabled{
+  background-color: #a5a5a5bd;
+}
+.myform{
+position: relative;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progressbar{
+  position: absolute;
+  height: 6px;
+  background-color: #4285F4;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.progressbarlight{
+  position: absolute;
+  height: 6px;
+  background-color: rgba(128, 128, 128, 0.259);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
